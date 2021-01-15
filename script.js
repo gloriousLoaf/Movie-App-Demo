@@ -10,12 +10,8 @@
  * the API key exposed.
  */
 
-// You'll learn about imports later. This is importing the key from a file that I did
-// not push to GH. Checkout the /demo-env.js file to see what it would look like.
-import { API_KEY } from './env.js';
-
-// INSTEAD of imports, copy and paste the key I sent you here as the value of API_KEY:
-// var API_KEY = '';
+// Copy & Paste the key I sent you here as the value of API_KEY:
+var API_KEY = '';
 
 /* API Paths */
 // this var adds the key to the basic path to load the app with currently
@@ -24,7 +20,7 @@ var API_URL =
   'https:/api.themoviedb.org/3/discover/movie?sort_by=popularity.desc&api_key=' +
   API_KEY +
   '&PAGE=1';
-// we'll use this later to get images for the app, see line 90
+// we'll use this later to get images for the app, see line 86
 var IMG_PATH = 'https://image.tmdb.org/t/p/w1280';
 // this is the API path to search by keyword, this is what the Search box uses
 var SEARCH_API =
@@ -64,7 +60,7 @@ function showMovies(movies) {
   // loop through movies object, grab the info we need and create HTML with it
   for (var i = 0; i < movies.length; i++) {
     // getting all the things we need from the response, I like to name vars
-    // to match what they look like in the response. See console.log line 72
+    // to match what they look like in the response. See console.log line 68
     var title = movies[i].title;
     var poster_path = movies[i].poster_path;
     var vote_average = movies[i].vote_average;
@@ -114,7 +110,7 @@ function showMovies(movies) {
 }
 
 // convert rating to class for css color application
-// see line 100 where this function is used to add a class to the rating
+// see line 96 where this function is used to add a class to the rating
 // kind of like the workday scheduler!
 function getClassByRate(vote) {
   if (vote >= 8) {
