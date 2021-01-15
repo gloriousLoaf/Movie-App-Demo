@@ -9,7 +9,7 @@ For this version of the app, I have removed most of the advanced syntax and repl
 
 ---
 ### 🔎 Important!
-To make this work, **paste the API key** into the value of this variable on *line 18* of `script.js`:
+To make this work, **paste the API key** into the value of this variable on *line 14* of `script.js`:
 ```
 var API_KEY = '';
 ```
